@@ -9,7 +9,7 @@ interface ButtonProps extends TouchableOpacityProps {
 export function Button({ title, destructive = false, ...props }: ButtonProps) {
 
     return (
-        <Container variant={destructive} {...props}>
+        <Container destructive={destructive} {...props}>
             <Title>{ title }</Title>
         </Container>
     )
