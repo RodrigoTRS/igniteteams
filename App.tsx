@@ -6,6 +6,7 @@ import { Loading } from './src/components/Loading/index';
 import theme from "./src/theme"
 import { NewGroup } from './src/screens/NewGroup/index';
 import { Players } from "@screens/Players";
+import { Router } from "@routes/index";
   
   
 export default function App() {
@@ -22,7 +23,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Players /> : <Loading />}
+      {fontsLoaded ? <Router /> : <Loading />}
     </ThemeProvider>
   );
 }
